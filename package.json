@@ -2,6 +2,7 @@
   "name": "est_site",
   "version": "0.0.0",
   "private": true,
+
   "dependencies": {
     "bcrypt": "^0.8.5",
     "body-parser": "~1.13.2",
