@@ -12,7 +12,7 @@ var livereload = require('express-livereload')
 var routes = require('./routes/index');
 mongoose.connect('mongodb://localhost/est_site');
 var app = express();
-livereload(app, config={watchDir:process.cwd()+'/views'});
+
 
 app.use('/mongo_express', mongo_express(mongo_express_config))
 
@@ -42,6 +42,9 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if(app.get('env') === 'development') {
+
+    livereload(app, config={watchDir:process.cwd()+'/views'});
+
     app.use(function(err, req, res, next) {
         if(err.status == 404) {
             res.status(err.status);
