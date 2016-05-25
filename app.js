@@ -6,10 +6,13 @@ var path = require('path');
 var mongo_express = require('mongo-express/lib/middleware')
 var mongo_express_config = require('./config')
 var mongoose = require('mongoose');
-var cons = require('consolidate');
+var cons = require('consolidate')
+var livereload = require('express-livereload')
+
 var routes = require('./routes/index');
 mongoose.connect('mongodb://localhost/est_site');
 var app = express();
+livereload(app, config={watchDir:process.cwd()+'/views'});
 
 app.use('/mongo_express', mongo_express(mongo_express_config))
 
