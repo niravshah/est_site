@@ -1,1 +1,14 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+.gototop-button {
+    border-radius: 4px 0 0 4px;
+    bottom: 110px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    line-height: 24px;
+    padding: 8px 14px 9px;
+    position: fixed;
+    right: 0;
+    z-index: 200;
+    color: black;
+    background-color:white ;
+}

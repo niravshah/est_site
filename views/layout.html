@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bring Your Idea to Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/css/themify-icons.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/css/flexslider.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/css/ytplayer.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/css/theme-hyperblue.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
+          rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700" rel="stylesheet" type="text/css">
+    <link href="/css/font-poppins.css" rel="stylesheet" type="text/css">
+    <script src="/js/jquery.min.js"></script>
+</head>
+<body class="scroll-assist">
+<div class="nav-container">
+    <a id="top"></a>
+    <nav class="absolute transparent">
+        <div class="nav-bar">
+            <div class="module left">
+                <a href="/">
+                    <img class="logo logo-light" alt="Foundry" src="/img/logo-light.png"/>
+                    <img class="logo logo-dark" alt="Foundry" src="/img/logo-dark.png"/>
+                </a>
+            </div>
+            <div class="module widget-handle offscreen-toggle right">
+                <i class="ti-menu"></i>
+            </div>
+        </div>
+        <div class="offscreen-container bg-dark text-center">
+            <div class="close-nav">
+                <a href="#">
+                    <i class="ti-close"></i>
+                </a>
+            </div>
+            <div class="v-align-transform text-center">
+                <a href="#"><img alt="Logo" class="image-xs mb40 mb-xs-24" src="/img/logo-light.png"/></a>
+                {%block nav%}{%endblock%}
+                <p class="fade-half">
+                    London, NW9<br/>
+                    hello@earlystage.tech
+                </p>
+            </div>
+        </div><!--end of offscreen container-->
+    </nav>
+</div>
+<div class="main-container">
+    {% block content %}{% endblock %}
+    <footer class="footer-2 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
+                    <a href="#  ">
+                        <img alt="Logo" class="image-xs mb32 fade-on-hover" src="/img/logo-light.png"/>
+                    </a>
+                    <h3>Get In Touch</h3>
+                    <h4>hello@earlystage.tech</h4>
+                    <h5>London, NW9</h5>
+                    <h5 class="fade-1-4">EarlyStage.Tech &copy; 2016</h5>
+                </div>
+            </div><!--end of row-->
+            <div class="row pt40">
+                <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
+            </div>
+        </div><!--end of container-->
+    </footer>
+</div>
+<a class="inner-link gototop gototop-button" href="#top">
+    <i class="ti-arrow-up"></i>
+</a>
+
+
+<script src="/js/bootstrap.js"></script>
+<script src="/js/flickr.js"></script>
+<script src="/js/flexslider.min.js"></script>
+<script src="/js/lightbox.min.js"></script>
+<script src="/js/masonry.min.js"></script>
+<script src="/js/twitterfetcher.min.js"></script>
+<script src="/js/spectragram.min.js"></script>
+<script src="/js/ytplayer.min.js"></script>
+<script src="/js/countdown.min.js"></script>
+<script src="/js/smooth-scroll.min.js"></script>
+<script src="/js/parallax.js"></script>
+<script src="/js/scripts.js"></script>
+</body>
+</html>
