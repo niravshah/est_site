@@ -1,0 +1,27 @@
+{
+  "name": "est_site",
+  "description": "Early Stage Tech Site",
+  "main": "app.js",
+  "authors": [
+    "niravshah <nirav.shah83@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Early",
+    "Stage",
+    "Tech"
+  ],
+  "homepage": "https://github.com/niravshah/est_site",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-route": "^1.5.5"
+  }
+}
